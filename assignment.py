@@ -94,13 +94,10 @@ def arithmetic_ops(a, b):
     """
     # Perform arithmetic operations
     results = {
-        "addition": a + b,
-        "subtraction": a - b,
-        "multiplication": a * b,
-        "division": a / b if b != 0 else "undefined",  # Handle division by zero
-        "modulus": a % b if b != 0 else "undefined",   # Handle modulus by zero
-        "floor_division": a // b if b != 0 else "undefined",  # Floor division
-        "exponential": a ** b  # Exponential operation
+        "sum": a + b,
+        "difference": a - b,
+        "product": a * b,
+        "quotient": a / b if b != 0 else "undefined",  # Handle division by zero
     }
     return results
     pass
@@ -119,8 +116,6 @@ def logical_ops(x, y):
         "and": x and y,  # Logical AND
         "or": x or y,    # Logical OR
         "not_x": not x,  # Logical NOT for x
-        "not_y": not y,  # Logical NOT for y,
-        "xor": (x and not y) or (not x and y)  # Logical XOR
     }
     return results
     pass
@@ -139,12 +134,6 @@ def bitwise_ops(a, b):
         "and": a & b,          # Bitwise AND
         "or": a | b,           # Bitwise OR
         "xor": a ^ b,          # Bitwise XOR
-        "not_a": ~a,           # Bitwise NOT for a
-        "not_b": ~b,           # Bitwise NOT for b
-        "left_shift_a": a << 1,  # Left shift a by 1 bit
-        "left_shift_b": b << 1,  # Left shift b by 1 bit
-        "right_shift_a": a >> 1, # Right shift a by 1 bit
-        "right_shift_b": b >> 1  # Right shift b by 1 bit
     }
     return results
     pass
